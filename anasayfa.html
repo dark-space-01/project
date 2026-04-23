@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anasayfa - Web Tabanli Uygulama Gelistirme</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-koyu">
+        <div class="container">
+            <a class="navbar-brand" href="anasayfa.html">WebProje</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuAlan">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menuAlan">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link menu-aktif" href="anasayfa.html">Anasayfa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/hakkimizda.html">Hakkimizda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/urunler.html">Urunler</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/galeri.html">Galeri</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/hizmetler.html">Hizmetler</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/iletisim.html">Iletisim</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="sliderAlan" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#sliderAlan" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#sliderAlan" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#sliderAlan" data-bs-slide-to="2"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/slider1.jpg" class="d-block slider-resim" alt="Web Tasarim">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Web Tabanli Uygulama Gelistirme</h5>
+                    <p>11. Sinif Ders Icerikleri</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/slider2.jpg" class="d-block slider-resim" alt="HTML5">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>HTML5 ve CSS3</h5>
+                    <p>Modern Web Teknolojileri</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/slider3.jpg" class="d-block slider-resim" alt="Bootstrap">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Bootstrap Framework</h5>
+                    <p>Responsive Tasarim</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#sliderAlan" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#sliderAlan" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h1 class="konu-baslik">Web Tabanli Uygulama Gelistirme</h1>
+                <p class="lead">Bu proje, 11. sinif Web Tabanli Uygulama Gelistirme dersi kapsaminda hazirlanmistir.</p>
+            </div>
+        </div>
+
+        <div class="row mt-4">
+            <div class="col-md-4">
+                <div class="card kart-alan">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">HTML5</h5>
+                        <p class="card-text">Hyper Text Markup Language - Web sayfalarinin temel yapi tasidir.</p>
+                        <a href="pages/urunler.html" class="btn btn-primary">Detaylar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card kart-alan">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">CSS3</h5>
+                        <p class="card-text">Cascading Style Sheets - Web sayfalarinin gorsel tasarimini saglar.</p>
+                        <a href="pages/urunler.html" class="btn btn-primary">Detaylar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card kart-alan">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Bootstrap</h5>
+                        <p class="card-text">Responsive web tasarimi icin populer CSS frameworkudur.</p>
+                        <a href="pages/urunler.html" class="btn btn-primary">Detaylar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-5">
+            <div class="col-md-6">
+                <h3 class="konu-baslik">One Cikan Konular</h3>
+                <div class="list-group">
+                    <a href="pages/kod-detay.html?konu=html" class="list-group-item list-group-item-action">
+                        <div class="d-flex w-100 justify-content-between">
+                            <h5 class="mb-1">HTML5 Belge Yapisi</h5>
+                            <small class="etiket-stil">HTML</small>
+                        </div>
+                        <p class="mb-1">HTML5 belge yapisinin temel elemanlari ve kullanimi.</p>
+                    </a>
+                    <a href="pages/kod-detay.html?konu=css" class="list-group-item list-group-item-action">
+                        <div class="d-flex w-100 justify-content-between">
+                            <h5 class="mb-1">CSS Seciciler</h5>
+                            <small class="etiket-stil">CSS</small>
+                        </div>
+                        <p class="mb-1">CSS secicileri ve kullanim alanlari.</p>
+                    </a>
+                    <a href="pages/kod-detay.html?konu=bootstrap" class="list-group-item list-group-item-action">
+                        <div class="d-flex w-100 justify-content-between">
+                            <h5 class="mb-1">Bootstrap Grid Sistemi</h5>
+                            <small class="etiket-stil">Bootstrap</small>
+                        </div>
+                        <p class="mb-1">Bootstrap grid yapisi ve kullanimi.</p>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <h3 class="konu-baslik">Hizli Erisim</h3>
+                <div class="d-grid gap-2">
+                    <a href="pages/urunler.html" class="btn btn-outline-primary">Kod Ornekleri</a>
+                    <a href="pages/galeri.html" class="btn btn-outline-primary">Gorsel Galeri</a>
+                    <a href="pages/hakkimizda.html" class="btn btn-outline-primary">Hakkimizda</a>
+                    <a href="pages/iletisim.html" class="btn btn-outline-primary">Iletisim</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer-alan mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>WebProje</h5>
+                    <p>Web Tabanli Uygulama Gelistirme dersi projesi olarak hazirlanmistir.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Hizli Linkler</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="anasayfa.html">Anasayfa</a></li>
+                        <li><a href="pages/hakkimizda.html">Hakkimizda</a></li>
+                        <li><a href="pages/urunler.html">Urunler</a></li>
+                        <li><a href="pages/iletisim.html">Iletisim</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Sosyal Medya</h5>
+                    <a href="#" class="sosyal-link">Facebook</a>
+                    <a href="#" class="sosyal-link">Twitter</a>
+                    <a href="#" class="sosyal-link">Instagram</a>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-12 text-center">
+                    <p>&copy; 2024 WebProje. Tum haklari darkspace aittir.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <button id="scrollYukari" class="btn btn-primary scroll-yukari" onclick="yukariKaydir()">Yukari</button>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

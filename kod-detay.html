@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kod Detay - Web Tabanli Uygulama Gelistirme</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-koyu">
+        <div class="container">
+            <a class="navbar-brand" href="../anasayfa.html">WebProje</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuAlan">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menuAlan">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../anasayfa.html">Anasayfa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="hakkimizda.html">Hakkimizda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="urunler.html">Urunler</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="galeri.html">Galeri</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="hizmetler.html">Hizmetler</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="iletisim.html">Iletisim</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-12">
+                <h1 class="konu-baslik" id="konuBaslik">Kod Detayi</h1>
+            </div>
+        </div>
+
+        <div class="row" id="html-temel">
+            <div class="col-md-12">
+                <div class="card mb-4">
+                    <div class="card-header kart-baslik d-flex justify-content-between align-items-center">
+                        <span>HTML5 Temel Yapisi</span>
+                        <button id="btn1" class="btn btn-sm btn-secondary buton-kopyala" onclick="kopyalaKod('btn1', 'kod1')">Kopyala</button>
+                    </div>
+                    <div class="card-body">
+                        <pre class="kod-blok" id="kod1">&lt;!DOCTYPE html&gt;
+&lt;html lang="tr"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Ilk HTML Sayfam&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Merhaba Dunya&lt;/h1&gt;
+    &lt;p&gt;Bu benim ilk web sayfam&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row" id="baslik">
+            <div class="col-md-12">
+                <div class="card mb-4">
+                    <div class="card-header kart-baslik d-flex justify-content-between align-items-center">
+                        <span>Baslik Etiketleri</span>
+                        <button id="btn2" class="btn btn-sm btn-secondary buton-kopyala" onclick="kopyalaKod('btn2', 'kod2')">Kopyala</button>
+                    </div>
+                    <div class="card-body">
+                        <pre class="kod-blok" id="kod2">&lt;h1&gt;Turkiye&lt;/h1&gt;
+&lt;h2&gt;Turkiye&lt;/h2&gt;
+&lt;h3&gt;Turkiye&lt;/h3&gt;
+&lt;h4&gt;Turkiye&lt;/h4&gt;
+&lt;h5&gt;Turkiye&lt;/h5&gt;
+&lt;h6&gt;Turkiye&lt;/h6&gt;</pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row" id="paragraf">
+            <div class="col-md-12">
+                <div class="card mb-4">
+                    <div class="card-header kart-baslik d-flex justify-content-between align-items-center">
+                        <span>Paragraf ve Metin Bicimlendirme</span>
+                        <button id="btn3" class="btn btn-sm btn-secondary buton-kopyala" onclick="kopyalaKod('btn3', 'kod3')">Kopyala</button>
+                    </div>
+                    <div class="card-body">
+                        <pre class="kod-blok" id="kod3">&lt;p&gt;Bu bir paragraftir&lt;/p&gt;
+
+&lt;p&gt;
+    Bu &lt;b&gt;kalin&lt;/b&gt; bir metindir&lt;br/&gt;
+    Bu &lt;strong&gt;guclu&lt;/strong&gt; bir metin&lt;br/&gt;
+    Bu &lt;i&gt;italik&lt;/i&gt; metindir&lt;br/&gt;
+    Bu &lt;em&gt;vurgulu&lt;/em&gt; metin&lt;br/&gt;
+    Bu &lt;u&gt;alti cizili&lt;/u&gt; metin&lt;br/&gt;
+    Bu &lt;mark&gt;isaretli&lt;/mark&gt; metin&lt;br/&gt;
+    Bu &lt;small&gt;kucuk&lt;/small&gt; metin&lt;br/&gt;
+    Bu &lt;del&gt;ustu cizili&lt;/del&gt; metin&lt;br/&gt;
+    H&lt;sub&gt;2&lt;/sub&gt;O&lt;br/&gt;
+    x&lt;sup&gt;3&lt;/sup&gt;
+&lt;/p&gt;</pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row" id="liste">
+            <div class="col-md-12">
+                <div class="card mb-4">
+                    <div class="card-header kart-baslik d-flex justify-content-between align-items-center">
+                        <span>Listeleme Etiketleri</span>
+                        <button id="btn4" class="btn btn-sm btn-secondary buton-kopyala" onclick="kopyalaKod('btn4', 'kod4')">Kopyala</button>
+                    </div>
+                    <div class="card-body">
+                        <pre class="kod-blok" id="kod4">&lt;!-- Sirasiz Liste --&gt;
+&lt;ul&gt;
+    &lt;li&gt;Vatanseverlik&lt;/li&gt;
+    &lt;li&gt;Yardimlasma&lt;/li&gt;
+    &lt;li&gt;Sorumluluk&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;!-- Sirali Liste --&gt;
+&lt;ol&gt;
+    &lt;li&gt;HTML5&lt;/li&gt;
+    &lt;li&gt;CSS&lt;/li&gt;
+    &lt;li&gt;JavaScript&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;!-- Tanim Listesi --&gt;
+&lt;dl&gt;
+    &lt;dt&gt;Ahlak&lt;/dt&gt;
+    &lt;dd&gt;Bir toplumun en ust genel standartlarini icerir.&lt;/dd&gt;
+    &lt;dt&gt;Etik&lt;/dt&gt;
+    &lt;dd&gt;Toplumdaki belirli bir meslegin standartlaridir.&lt;/dd&gt;
+&lt;/dl&gt;</pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row" id="tablo">
+            <div class="col-md-12">
+                <div class="card mb-4">
+                    <div class="card-header kart-baslik d-flex justify-content-between align-items-center">
+                        <span>Tablo Olusturma</span>
+                        <button id="btn5" class="btn btn-sm btn-secondary buton-kopyala" onclick="kopyalaKod('btn5', 'kod5')">Kopyala</button>
+                    </div>
+                    <div class="card-body">
+                        <pre class="kod-blok" id="kod5">&lt;table border="1" cellpadding="5"&gt;
+    &lt;caption&gt;Yazili Notlari&lt;/caption&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;th&gt;Isim&lt;/th&gt;
+            &lt;th&gt;Not&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Ahmet&lt;/td&gt;
+            &lt;td&gt;100&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Mehmet&lt;/td&gt;
+            &lt;td&gt;90&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+    &lt;tfoot&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Ortalama&lt;/td&gt;
+            &lt;td&gt;95&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tfoot&gt;
+&lt;/table&gt;</pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row" id="baglanti">
+            <div class="col-md-12">
+                <div class="card mb-4">
+                    <div class="card-header kart-baslik d-flex justify-content-between align-items-center">
+                        <span>Baglanti Elemanlari</span>
+                        <button id="btn6" class="btn btn-sm btn-secondary buton-kopyala" onclick="kopyalaKod('btn6', 'kod6')">Kopyala</button>
+                    </div>
+                    <div class="card-body">
+                        <pre class="kod-blok" id="kod6">&lt;!-- Sayfalar Arasi Baglanti --&gt;
+&lt;a href="hakkimda.html"&gt;Hakkimda&lt;/a&gt;
+
+&lt;!-- Dis Baglanti --&gt;
+&lt;a href="https://www.meb.gov.tr" target="_blank"&gt;MEB&lt;/a&gt;
+
+&lt;!-- E-posta Baglantisi --&gt;
+&lt;a href="mailto:ornek@email.com"&gt;E-posta Gonder&lt;/a&gt;
+
+&lt;!-- Sayfa Ici Baglanti --&gt;
+&lt;a href="#bolum1"&gt;Bolum 1'e Git&lt;/a&gt;</pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row" id="resim">
+            <div class="col-md-12">
+                <div class="card mb-4">
+                    <div class="card-header kart-baslik d-flex justify-content-between align-items-center">
+                        <span>Resim Ekleme</span>
+                        <button id="btn7" class="btn btn-sm btn-secondary buton-kopyala" onclick="kopyalaKod('btn7', 'kod7')">Kopyala</button>
+                    </div>
+                    <div class="card-body">
+                        <pre class="kod-blok" id="kod7">&lt;!-- Temel Resim Ekleme --&gt;
+&lt;img src="resim.jpg" alt="Aciklama" /&gt;
+
+&lt;!-- Genislik ve Yukseklik ile --&gt;
+&lt;img src="resim.jpg" width="400" height="200" title="Baslik" /&gt;
+
+&lt;!-- Alt Klasorden Resim --&gt;
+&lt;img src="galeri/resim.jpg" alt="Galeri Resmi" /&gt;</pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row" id="video">
+            <div class="col-md-12">
+                <div class="card mb-4">
+                    <div class="card-header kart-baslik d-flex justify-content-between align-items-center">
+                        <span>Video Ekleme</span>
+                        <button id="btn8" class="btn btn-sm btn-secondary buton-kopyala" onclick="kopyalaKod('btn8', 'kod8')">Kopyala</button>
+                    </div>
+                    <div class="card-body">
+                        <pre class="kod-blok" id="kod8">&lt;video width="600" height="500" controls&gt;
+    &lt;source src="film.mp4" type="video/mp4"&gt;
+    &lt;source src="film.ogg" type="video/ogg"&gt;
+    Tarayiciniz video ogesini desteklemiyor.
+&lt;/video&gt;
+
+&lt;!-- Otomatik Oynatma --&gt;
+&lt;video controls autoplay&gt;
+    &lt;source src="video.mp4" type="video/mp4"&gt;
+&lt;/video&gt;
+
+&lt;!-- Dongu ile --&gt;
+&lt;video controls loop&gt;
+    &lt;source src="video.mp4" type="video/mp4"&gt;
+&lt;/video&gt;</pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row" id="form">
+            <div class="col-md-12">
+                <div class="card mb-4">
+                    <div class="card-header kart-baslik d-flex justify-content-between align-items-center">
+                        <span>Form Elemanlari</span>
+                        <button id="btn9" class="btn btn-sm btn-secondary buton-kopyala" onclick="kopyalaKod('btn9', 'kod9')">Kopyala</button>
+                    </div>
+                    <div class="card-body">
+                        <pre class="kod-blok" id="kod9">&lt;form action="gonder.php" method="post"&gt;
+    &lt;label&gt;Ad Soyad:&lt;/label&gt;
+    &lt;input type="text" name="ad" placeholder="Adinizi girin"&gt;
+    
+    &lt;label&gt;E-posta:&lt;/label&gt;
+    &lt;input type="email" name="email"&gt;
+    
+    &lt;label&gt;Sifre:&lt;/label&gt;
+    &lt;input type="password" name="sifre"&gt;
+    
+    &lt;label&gt;Cinsiyet:&lt;/label&gt;
+    &lt;input type="radio" name="cinsiyet" value="erkek"&gt; Erkek
+    &lt;input type="radio" name="cinsiyet" value="kadin"&gt; Kadin
+    
+    &lt;label&gt;Hobiler:&lt;/label&gt;
+    &lt;input type="checkbox" name="hobi" value="spor"&gt; Spor
+    &lt;input type="checkbox" name="hobi" value="muzik"&gt; Muzik
+    
+    &lt;label&gt;Sehir:&lt;/label&gt;
+    &lt;select name="sehir"&gt;
+        &lt;option value=""&gt;Seciniz&lt;/option&gt;
+        &lt;option value="istanbul"&gt;Istanbul&lt;/option&gt;
+        &lt;option value="ankara"&gt;Ankara&lt;/option&gt;
+    &lt;/select&gt;
+    
+    &lt;label&gt;Mesaj:&lt;/label&gt;
+    &lt;textarea name="mesaj" rows="4" cols="50"&gt;&lt;/textarea&gt;
+    
+    &lt;button type="submit"&gt;Gonder&lt;/button&gt;
+&lt;/form&gt;</pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row" id="secici">
+            <div class="col-md-12">
+                <div class="card mb-4">
+                    <div class="card-header kart-baslik d-flex justify-content-between align-items-center">
+                        <span>CSS Seciciler</span>
+                        <button id="btn10" class="btn btn-sm btn-secondary buton-kopyala" onclick="kopyalaKod('btn10', 'kod10')">Kopyala</button>
+                    </div>
+                    <div class="card-body">
+                        <pre class="kod-blok" id="kod10">/* Etiket Secici */
+p {
+    color: blue;
+    font-size: 16px;
+}
+
+/* Sinif Secici */
+.baslik {
+    color: red;
+    font-weight: bold;
+}
+
+/* Kimlik Secici */
+#menu {
+    background-color: #333;
+    color: white;
+}
+
+/* Coklu Secici */
+h1, h2, h3 {
+    font-family: Arial;
+}</pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row" id="kutu">
+            <div class="col-md-12">
+                <div class="card mb-4">
+                    <div class="card-header kart-baslik d-flex justify-content-between align-items-center">
+                        <span>Kutu Modeli</span>
+                        <button id="btn11" class="btn btn-sm btn-secondary buton-kopyala" onclick="kopyalaKod('btn11', 'kod11')">Kopyala</button>
+                    </div>
+                    <div class="card-body">
+                        <pre class="kod-blok" id="kod11">.kutu {
+    /* Dis bosluk */
+    margin: 10px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    
+    /* Ic bosluk */
+    padding: 20px;
+    padding-left: 10px;
+    
+    /* Kenarlik */
+    border: 2px solid #000;
+    border-radius: 5px;
+    
+    /* Icerik genisligi */
+    width: 300px;
+    height: 200px;
+}</pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row" id="grid">
+            <div class="col-md-12">
+                <div class="card mb-4">
+                    <div class="card-header kart-baslik d-flex justify-content-between align-items-center">
+                        <span>Bootstrap Grid Sistemi</span>
+                        <button id="btn12" class="btn btn-sm btn-secondary buton-kopyala" onclick="kopyalaKod('btn12', 'kod12')">Kopyala</button>
+                    </div>
+                    <div class="card-body">
+                        <pre class="kod-blok" id="kod12">&lt;div class="container"&gt;
+    &lt;div class="row"&gt;
+        &lt;div class="col-md-4"&gt;
+            4 birimlik sutun
+        &lt;/div&gt;
+        &lt;div class="col-md-4"&gt;
+            4 birimlik sutun
+        &lt;/div&gt;
+        &lt;div class="col-md-4"&gt;
+            4 birimlik sutun
+        &lt;/div&gt;
+    &lt;/div&gt;
+    
+    &lt;div class="row"&gt;
+        &lt;div class="col-md-6"&gt;
+            6 birimlik sutun
+        &lt;/div&gt;
+        &lt;div class="col-md-6"&gt;
+            6 birimlik sutun
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-4">
+            <div class="col-12">
+                <a href="urunler.html" class="btn btn-secondary">Geri Don</a>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer-alan mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>WebProje</h5>
+                    <p>Web Tabanli Uygulama Gelistirme dersi projesi olarak hazirlanmistir.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Hizli Linkler</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="../anasayfa.html">Anasayfa</a></li>
+                        <li><a href="hakkimizda.html">Hakkimizda</a></li>
+                        <li><a href="urunler.html">Urunler</a></li>
+                        <li><a href="iletisim.html">Iletisim</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Sosyal Medya</h5>
+                    <a href="#" class="sosyal-link">Facebook</a>
+                    <a href="#" class="sosyal-link">Twitter</a>
+                    <a href="#" class="sosyal-link">Instagram</a>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-12 text-center">
+                    <p>&copy; 2026 WebProje. Tum haklari darkspace aittir.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <button id="scrollYukari" class="btn btn-primary scroll-yukari" onclick="yukariKaydir()">Yukari</button>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="../js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urun Detay - Web Tabanli Uygulama Gelistirme</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-koyu">
+        <div class="container">
+            <a class="navbar-brand" href="../anasayfa.html">WebProje</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuAlan">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menuAlan">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../anasayfa.html">Anasayfa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="hakkimizda.html">Hakkimizda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="urunler.html">Urunler</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="galeri.html">Galeri</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="hizmetler.html">Hizmetler</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="iletisim.html">Iletisim</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-12">
+                <h1 class="konu-baslik">Urun Detayi</h1>
+            </div>
+        </div>
+
+        <div class="row mt-4">
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-body">
+                        <h3 id="urunAdi">HTML5 Egitim Seti</h3>
+                        <p class="text-muted">Kategori: <span id="urunKategori">Egitim</span></p>
+                        <hr>
+                        <h5>Aciklama</h5>
+                        <p id="urunAciklama">Bu egitim seti ile HTML5 temellerini ogrenebilirsiniz. Icerikte HTML5 belge yapisi, temel etiketler, basliklar, paragraflar, listeleme, tablolar ve form elemanlari yer almaktadir.</p>
+                        
+                        <h5 class="mt-4">Icerik</h5>
+                        <ul>
+                            <li>HTML5 Belge Yapisi</li>
+                            <li>Temel Etiketler</li>
+                            <li>Baslik ve Paragraf</li>
+                            <li>Listeleme Etiketleri</li>
+                            <li>Tablo Olusturma</li>
+                            <li>Form Elemanlari</li>
+                            <li>Medya Elemanlari</li>
+                        </ul>
+
+                        <h5 class="mt-4">Ozellikler</h5>
+                        <table class="table table-bordered">
+                            <tr>
+                                <td>Sure</td>
+                                <td>40 ders saati</td>
+                            </tr>
+                            <tr>
+                                <td>Seviye</td>
+                                <td>Temel</td>
+                            </tr>
+                            <tr>
+                                <td>On Kosul</td>
+                                <td>Yok</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <h5>Diger Urunler</h5>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">
+                                <a href="urun-detay.html?urun=css">CSS3 Egitim Seti</a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="urun-detay.html?urun=bootstrap">Bootstrap Egitim Seti</a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="urun-detay.html?urun=web">Web Tasarim Seti</a>
+                            </li>
+                        </ul>
+                        <a href="urunler.html" class="btn btn-primary mt-3">Tum Urunler</a>
+                    </div>
+                </div>
+
+                <div class="card mt-3">
+                    <div class="card-body text-center">
+                        <h5>Iletisim</h5>
+                        <p>Daha fazla bilgi icin bize ulasin.</p>
+                        <a href="iletisim.html" class="btn btn-secondary">Iletisim</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer-alan mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>WebProje</h5>
+                    <p>Web Tabanli Uygulama Gelistirme dersi projesi olarak hazirlanmistir.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Hizli Linkler</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="../anasayfa.html">Anasayfa</a></li>
+                        <li><a href="hakkimizda.html">Hakkimizda</a></li>
+                        <li><a href="urunler.html">Urunler</a></li>
+                        <li><a href="iletisim.html">Iletisim</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Sosyal Medya</h5>
+                    <a href="#" class="sosyal-link">Facebook</a>
+                    <a href="#" class="sosyal-link">Twitter</a>
+                    <a href="#" class="sosyal-link">Instagram</a>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-12 text-center">
+                    <p>&copy; 2026 WebProje. Tum haklari darkspace aittir.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <button id="scrollYukari" class="btn btn-primary scroll-yukari" onclick="yukariKaydir()">Yukari</button>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="../js/script.js"></script>
+</body>
+</html>

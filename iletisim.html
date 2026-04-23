@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iletisim - Web Tabanli Uygulama Gelistirme</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-koyu">
+        <div class="container">
+            <a class="navbar-brand" href="../anasayfa.html">WebProje</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuAlan">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menuAlan">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../anasayfa.html">Anasayfa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="hakkimizda.html">Hakkimizda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="urunler.html">Urunler</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="galeri.html">Galeri</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="hizmetler.html">Hizmetler</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link menu-aktif" href="iletisim.html">Iletisim</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-12">
+                <h1 class="konu-baslik">Iletisim</h1>
+                <p class="lead">Bizimle iletisime gecin.</p>
+            </div>
+        </div>
+
+        <div class="row mt-4">
+            <div class="col-md-6">
+                <div class="iletisim-formu">
+                    <h3>Iletisim Formu</h3>
+                    <form onsubmit="return formKontrol()">
+                        <div class="mb-3">
+                            <label for="adSoyad" class="form-label">Ad Soyad *</label>
+                            <input type="text" class="form-control" id="adSoyad" name="adSoyad" placeholder="Adinizi ve soyadinizi girin">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="email" class="form-label">E-posta *</label>
+                            <input type="email" class="form-control" id="email" name="email" placeholder="ornek@email.com">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="telefon" class="form-label">Telefon *</label>
+                            <input type="tel" class="form-control" id="telefon" name="telefon" placeholder="05XX XXX XX XX">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="adres" class="form-label">Adres</label>
+                            <textarea class="form-control" id="adres" name="adres" rows="3" placeholder="Adresinizi girin"></textarea>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Cinsiyet</label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="cinsiyet" id="erkek" value="erkek">
+                                <label class="form-check-label" for="erkek">Erkek</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="cinsiyet" id="kadin" value="kadin">
+                                <label class="form-check-label" for="kadin">Kadin</label>
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="iletisimAmaci" class="form-label">Iletisim Amaci</label>
+                            <select class="form-select" id="iletisimAmaci" name="iletisimAmaci">
+                                <option value="" selected>Seciniz</option>
+                                <option value="soru">Soru Sormak</option>
+                                <option value="oneri">Oneri Vermek</option>
+                                <option value="sikayet">Sikayet</option>
+                                <option value="diger">Diger</option>
+                            </select>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="nereden" class="form-label">Nereden Ulastiniz?</label>
+                            <select class="form-select" id="nereden" name="nereden">
+                                <option value="" selected>Seciniz</option>
+                                <option value="arkadas">Arkadas Tavsiyesi</option>
+                                <option value="sosyal">Sosyal Medya</option>
+                                <option value="arama">Arama Motoru</option>
+                                <option value="diger">Diger</option>
+                            </select>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="mesaj" class="form-label">Mesajiniz</label>
+                            <textarea class="form-control" id="mesaj" name="mesaj" rows="5" placeholder="Mesajinizi buraya yazin"></textarea>
+                        </div>
+
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="onay" name="onay">
+                            <label class="form-check-label" for="onay">Kisisel verilerimin islenmesine izin veriyorum.</label>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Gonder</button>
+                        <button type="reset" class="btn btn-secondary">Temizle</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Iletisim Bilgileri</h5>
+                        <p class="card-text">
+                            <strong>Adres:</strong><br>
+                            Mesleki ve Teknik Anadolu Lisesi<br>
+                            Bilisim Teknolojileri Alani<br>
+                            Istanbul/Turkiye
+                        </p>
+                        <p class="card-text">
+                            <strong>Telefon:</strong> 0212 123 45 67<br>
+                            <strong>E-posta:</strong> info@webproje.com
+                        </p>
+                        <p class="card-text">
+                            <strong>Calisma Saatleri:</strong><br>
+                            Pazartesi - Cuma: 08:00 - 17:00<br>
+                            Cumartesi: 09:00 - 13:00
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Sosyal Medya</h5>
+                        <p class="card-text">
+                            <a href="#" class="sosyal-link">Facebook</a><br>
+                            <a href="#" class="sosyal-link">Twitter</a><br>
+                            <a href="#" class="sosyal-link">Instagram</a><br>
+                            <a href="#" class="sosyal-link">LinkedIn</a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="harita-kutu mt-4">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3011.6504356046977!2d28.9795303154145!3d41.0082379792996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab9be0c8c2b3b%3A0x6a7e7c8c9d8e7f6a!2sIstanbul!5e0!3m2!1str!2str!4v1234567890" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer-alan mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>WebProje</h5>
+                    <p>Web Tabanli Uygulama Gelistirme dersi projesi olarak hazirlanmistir.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Hizli Linkler</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="../anasayfa.html">Anasayfa</a></li>
+                        <li><a href="hakkimizda.html">Hakkimizda</a></li>
+                        <li><a href="urunler.html">Urunler</a></li>
+                        <li><a href="iletisim.html">Iletisim</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Sosyal Medya</h5>
+                    <a href="#" class="sosyal-link">Facebook</a>
+                    <a href="#" class="sosyal-link">Twitter</a>
+                    <a href="#" class="sosyal-link">Instagram</a>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-12 text-center">
+                    <p>&copy; 2024 WebProje. Tum haklari Yasemin hocama aittir.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <button id="scrollYukari" class="btn btn-primary scroll-yukari" onclick="yukariKaydir()">Yukari</button>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="../js/script.js"></script>
+</body>
+</html>
